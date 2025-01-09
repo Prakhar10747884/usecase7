@@ -1,4 +1,4 @@
-name: Origin Repository Workflow
+name: Original Repository
 
 on:
   push:

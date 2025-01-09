@@ -16,7 +16,7 @@ jobs:
           pat-token: ${{ secrets.PAT_TOKEN }}
           owner: Prakhar10747884
           repo: usecase7_target
-          event-type: custom-event
+      
 
       - name: Log response
         run: echo "Response:${{ steps.trigger.outputs.response }}"

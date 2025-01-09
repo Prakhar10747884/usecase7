@@ -15,3 +15,4 @@ jobs:
           pat-token: ${{ secrets.PAT_TOKEN }}
           owner: Prakhar10747884  # Replace with the owner of the target repository
           repo: usecase7_target   # Replace with the name of the target repository
+          event-type: custom-event

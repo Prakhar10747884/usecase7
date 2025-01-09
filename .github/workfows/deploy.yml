@@ -1,0 +1,17 @@
+name: Origin Repository Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  trigger-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger workflow in another repository
+        uses: amandastecz/pipeline-trigger@v1.1
+        with:
+          pat-token: ${{ secrets.PAT_TOKEN }}
+          owner: Prakhar10747884  # Replace with the owner of the target repository
+          repo: usecase7_target   # Replace with the name of the target repository
